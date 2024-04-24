@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Login form</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form>
+        <fieldset>
+            <legend>Register Form</legend>
+            <label for="name">Username : </label>
+            <input type="text" name="student_name" placeholder="Enter your name" id="name"><br>
+            <br>
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="Password" placeholder="enter your Password"><br>
+            <br>
+            Which Language I want to learn First<br>
+            <input type="radio" name="language" value="html" checked>HTML
+            <input type="radio" name="language" value="CSS">CSS
+            <input type="radio" name="language" value="JavaScript">JavaScript<br>
+            <br>
+            Language Known:<br>
+            <input type="checkbox" name="Technical_skill[]" value="html" checked>Html
+            <input type="checkbox" name="Technical_skill[]" value="css">CSS
+            <input type="checkbox" name="Technical_skill[]" value="JS">JS
+            <br>
+            <br>
+            Hoobies:<br>
+            <select name="Hobbies_value">Hobbies
+                <option value="chess">Chess</option>
+                <option value="gardening">Gardening</option>
+                <option value="circket">Circket</option>
+                <option value="football" selected>Football</option>
+            </select>
+            <br>
+            <br>
+            Outer Game:<br>
+            <select name="Outergame_value" multiple size="2">
+                <option value="chess">Chess</option>
+                <option value="gardening">Gardening</option>
+                <option value="circket" selected>Circket</option>
+                <option value="football">Football</option>
+            </select>
+            <br>
+            <br>
+            Message:<br>
+            <textarea cols="30" rows="8" placeholder="Enter your feeback"></textarea><br>
+            <input type="submit" name="submit_form" value="Register">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Job Application Form</legend>
+            Your Name :
+            <input type="text" name="username"><br>
+            <br>
+            Your Education :
+            <select name="education">
+                <option value="B.E">B.E</option>
+                <option value="B.TECH">B.Tech</option>
+                <option value="B.C.A">B.C.A</option>
+                <option value="B.SC">B.sc</option>
+            </select><br><br>
+            You want to apply for the posotion :<br>
+            <select name="position">
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Full Stack Developer">Full Stack Developer</option>
+            </select><br>
+            <br>
+            Your Resume:<br>
+
+            <input type="file" name="resume">
+            <br>
+            <br>
+            <input type="submit" name="send_Details" value="Send Details">
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>
+                Contact Form
+            </legend>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" max="99" min="18" required>
+            </p>
+            <p>
+                <label for="dob">Date Of Birth </label>
+                <input type="datetime-local" name="date" id="dob" required>
+            </p>
+            <p>
+                <label for="price">Price in Range </label>
+                <input type="range" name="price" id="price" min="0" max="1000" step="100">
+            </p>
+            <p>
+                <label for="url">Website URL </label>
+                <input type="url" name="url" id="url">
+            </p>
+            <p>
+                <label for="time">Time </label>
+                <input type="time" name="time" id="time">
+            </p>
+            <p>
+                <label for="price">Vacation week </label>
+                <input type="week" name="price" id="price">
+            </p>
+            <input type="submit" value="send">
+        </fieldset>
+        <br>
+        <br>
+        <!--DataList-->
+        <fieldset>
+            <legend>DataSet</legend>
+            <input list="browser" name="browser">
+            <datalist id="browser">
+                <option value="chrome">
+                <option value="edge">
+                <option value="brave">
+                <option value="firefox">
+            </datalist>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
